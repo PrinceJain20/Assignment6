@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Leaves and a Bud | Organic Whole Leaf Tea & Sachets</title>
+    <meta name="description" content="Shop organic whole leaf teas, matcha, chai, and pyramid tea sachets from Two Leaves and a Bud. Better tea for you and the planet.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Montserrat:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="top-announcement" id="topAnnouncement">
+        <div class="announcement-content">
+            <span class="announcement-text">Free US shipping for orders over $50</span>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="site-header" id="siteHeader">
+        <nav class="nav-container" aria-label="Main Navigation">
+            <!-- Mobile Hamburger Menu Button -->
+            <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Navigation Left (Shop, Learn, Reviews) -->
+            <div class="nav-left">
+                <!-- Shop Dropdown -->
+                <div class="nav-item has-dropdown" id="shopNav">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        <span>Shop</span>
+                        <i class="ri-arrow-down-s-line arrow-icon"></i>
+                    </button>
+                    <div class="dropdown-panel mega-dropdown" id="shopMegaMenu">
+                        <div class="dropdown-grid">
+                            <div class="dropdown-col">
+                                <h4 class="dropdown-heading">Collections</h4>
+                                <ul class="dropdown-list">
+                                    <li><a href="#matcha"><i class="ri-leaf-line"></i> Matcha Green Tea</a></li>
+                                    <li><a href="#naked-sachets"><i class="ri-inbox-line"></i> Naked Tea Sachets (50 ct)</a></li>
+                                    <li><a href="#organic-tea"><i class="ri-plant-line"></i> Organic Whole Leaf Tea</a></li>
+                                    <li><a href="#black-tea"><i class="ri-cup-line"></i> Black Tea</a></li>
+                                    <li><a href="#green-tea"><i class="ri-seedling-line"></i> Green Tea</a></li>
+                                    <li><a href="#herbal-tea"><i class="ri-flower-line"></i> Herbal & Caffeine-Free</a></li>
+                                    <li><a href="#chai-tea"><i class="ri-fire-line"></i> Chai Tea</a></li>
+                                    <li><a href="#gifts"><i class="ri-gift-line"></i> Gifts, Samplers & Teaware</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-col promo-col">
+                                <h4 class="dropdown-heading">Featured New Release</h4>
+                                <div class="dropdown-featured-card">
+                                    <div class="featured-badge">NEW COLLAB</div>
+                                    <p class="featured-title">Yuzu Matcha</p>
+                                    <p class="featured-desc">Crafted in collaboration with YUZUCO for bright citrus energy.</p>
+                                    <a href="#hero-banner" class="featured-link">Explore Blend →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Learn Dropdown -->
+                <div class="nav-item has-dropdown" id="learnNav">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        <span>Learn</span>
+                        <i class="ri-arrow-down-s-line arrow-icon"></i>
+                    </button>
+                    <div class="dropdown-panel simple-dropdown" id="learnSimpleMenu">
+                        <ul class="dropdown-list">
+                            <li><a href="#our-story"><i class="ri-book-open-line"></i> Our Story & Origins</a></li>
+                            <li><a href="#our-spirit"><i class="ri-heart-line"></i> Our Spirit & Sustainability</a></li>
+                            <li><a href="#cafe-partners"><i class="ri-store-2-line"></i> Cafe & Wholesale Partners</a></li>
+                            <li><a href="#journal"><i class="ri-newspaper-line"></i> The Tea Journal</a></li>
+                            <li><a href="#brewing"><i class="ri-temp-hot-line"></i> Brewing Guides & FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Reviews Link -->
+                <div class="nav-item">
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                </div>
+            </div>
+
+            <!-- Brand Logo (Centered) -->
+            <div class="nav-center">
+                <a href="/" class="brand-logo" aria-label="Two Leaves and a Bud Home">
+                    <img src="brandLogo.jpg" alt="Two Leaves and a Bud" class="logo-image">
+                </a>
+            </div>
+
+            <!-- Navigation Right (Account, Partners, Journal, Search, Bag) -->
+            <div class="nav-right">
+                <div class="nav-aux-links">
+                    <a href="#account" class="nav-aux-link">MY ACCOUNT</a>
+                    <a href="#partners" class="nav-aux-link">CAFE & WHOLESALE PARTNERS</a>
+                    <a href="#journal" class="nav-aux-link">TEA JOURNAL</a>
+                </div>
+                
+                <div class="nav-icons">
+                    <!-- Search Trigger -->
+                    <button class="nav-icon-btn" id="searchTrigger" aria-label="Search site">
+                        <i class="ri-search-line"></i>
+                    </button>
+                    
+                    <!-- Shopping Bag Trigger -->
+                    <button class="nav-icon-btn cart-trigger" id="cartTrigger" aria-label="View shopping bag">
+                        <i class="ri-shopping-bag-line"></i>
+                        <span class="cart-badge" id="cartBadgeCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Offcanvas Drawer -->
+    <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <div class="drawer-header">
+            <img src="brandLogo.jpg" alt="Two Leaves and a Bud" class="drawer-logo">
+            <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <div class="drawer-body">
+            <div class="mobile-search-box">
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder="Search our teas..." id="mobileSearchInput">
+            </div>
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-item has-submenu">
+                    <button class="mobile-submenu-toggle">
+                        <span>Shop Teas</span>
+                        <i class="ri-add-line"></i>
+                    </button>
+                    <ul class="mobile-submenu">
+                        <li><a href="#matcha">Matcha Green Tea</a></li>
+                        <li><a href="#naked-sachets">Naked Tea Sachets</a></li>
+                        <li><a href="#organic-tea">Organic Whole Leaf</a></li>
+                        <li><a href="#black-tea">Black Tea</a></li>
+                        <li><a href="#green-tea">Green Tea</a></li>
+                        <li><a href="#herbal-tea">Herbal Tea</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-item has-submenu">
+                    <button class="mobile-submenu-toggle">
+                        <span>Learn</span>
+                        <i class="ri-add-line"></i>
+                    </button>
+                    <ul class="mobile-submenu">
+                        <li><a href="#our-story">Our Story</a></li>
+                        <li><a href="#our-spirit">Our Spirit</a></li>
+                        <li><a href="#brewing">Brewing Guides</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-item"><a href="#reviews">Reviews</a></li>
+                <li class="mobile-menu-item"><a href="#account">My Account</a></li>
+                <li class="mobile-menu-item"><a href="#partners">Cafe & Wholesale Partners</a></li>
+                <li class="mobile-menu-item"><a href="#journal">Tea Journal</a></li>
+            </ul>
+        </div>
+    </aside>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Search Modal Overlay -->
+    <div class="search-modal" id="searchModal" aria-hidden="true">
+        <div class="search-modal-backdrop" id="searchBackdrop"></div>
+        <div class="search-modal-content">
+            <div class="search-modal-top">
+                <div class="search-input-wrap">
+                    <i class="ri-search-line"></i>
+                    <input type="search" id="modalSearchInput" placeholder="Search tea sachets, matcha, chai..." autocomplete="off">
+                </div>
+                <button class="search-modal-close" id="searchModalClose" aria-label="Close search">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="search-suggestions">
+                <p class="suggestions-label">Popular Searches:</p>
+                <div class="suggestion-chips">
+                    <span class="chip">Organic Tropical Green</span>
+                    <span class="chip">Yuzu Matcha</span>
+                    <span class="chip">Earl Grey Naked</span>
+                    <span class="chip">Peppermint Sachets</span>
+                    <span class="chip">Chai Tea Latte</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide-out Shopping Cart Drawer -->
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+        <div class="cart-drawer-header">
+            <div class="cart-title-row">
+                <i class="ri-shopping-bag-3-line"></i>
+                <h3>Your Bag (<span id="cartDrawerCount">0</span>)</h3>
+            </div>
+            <button class="cart-drawer-close" id="cartDrawerClose" aria-label="Close cart">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        
+        <!-- Free Shipping Meter -->
+        <div class="shipping-progress-container">
+            <p class="shipping-status-text" id="shippingStatusText">Add <strong>$50.00</strong> more for Free US Shipping!</p>
+            <div class="progress-bar-track">
+                <div class="progress-bar-fill" id="shippingProgressBar" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <!-- Cart Items List -->
+        <div class="cart-items-container" id="cartItemsContainer">
+            <div class="cart-empty-state" id="cartEmptyState">
+                <i class="ri-cup-line empty-icon"></i>
+                <p class="empty-title">Your bag is currently empty</p>
+                <p class="empty-sub">Explore our certified organic teas and discover your new favorite brew.</p>
+                <a href="#best-sellers" class="btn btn-secondary empty-btn" id="emptyShopBtn">Explore Best Sellers</a>
+            </div>
+            <ul class="cart-items-list" id="cartItemsList">
+                <!-- Dynamically populated via JS -->
+            </ul>
+        </div>
+
+        <!-- Cart Footer -->
+        <div class="cart-drawer-footer" id="cartDrawerFooter">
+            <div class="cart-subtotal-row">
+                <span>Estimated Subtotal</span>
+                <span class="subtotal-amount" id="cartSubtotalAmount">$0.00</span>
+            </div>
+            <p class="shipping-note">Taxes and shipping calculated at checkout</p>
+            <button class="btn btn-primary checkout-btn" id="checkoutBtn">
+                <span>Proceed to Checkout</span>
+                <i class="ri-arrow-right-line"></i>
+            </button>
+        </div>
+    </aside>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Toast Notification for Add-to-Cart -->
+    <div class="toast-notification" id="toastNotification" aria-live="polite">
+        <div class="toast-icon"><i class="ri-check-line"></i></div>
+        <div class="toast-text" id="toastMessage">Item added to your bag!</div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main id="mainContent">
+
+        <!-- HERO SECTION (YUZU MATCHA COLLABORATION) -->
+        <section class="hero-section" id="hero-banner">
+            <div class="hero-container">
+                <!-- Left Content Column -->
+                <div class="hero-content">
+                    <div class="badge-wrapper">
+                        <!-- User-provided "NEW!" badge image -->
+                        <img src="0cb21568-caa1-4579-9205-60058da6c544.png" alt="NEW!" class="new-badge-img">
+                    </div>
+                    
+                    <h1 class="hero-title">Yuzu Matcha</h1>
+                    
+                    <p class="hero-description">
+                        A collaboration with our buds at YUZUCO, Two Leaves and a Bud’s Yuzu Matcha brings together premium yuzu and pure matcha in one effortlessly refreshing blend.
+                    </p>
+                    
+                    <div class="hero-cta-wrapper">
+                        <a href="#best-sellers" class="btn btn-hero" id="heroShopBtn">
+                            <span>Shop Now</span>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual Column (Matcha Mascot & Product) -->
+                <div class="hero-visual">
+                    <div class="hero-image-frame">
+                        <!-- User-provided Hero illustration image -->
+                        <img 
+                            src="Yuzu_Hero_mobile_2dd2a935-ce43-49d1-b42c-0d816f2959dd.webp" 
+                            alt="Two Leaves and a Bud x YUZUCO Yuzu Matcha Collaboration" 
+                            class="hero-banner-image"
+                            loading="eager"
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BRAND EDITORIAL MOTTO SECTION -->
+        <section class="brand-statement-section" id="brand-origins">
+            <div class="statement-container">
+                <div class="botanical-accent">
+                    <i class="ri-leaf-fill"></i>
+                </div>
+                <h2 class="brand-motto-text">
+                    A <em>great</em> cup starts with a careful pluck — the top two leaves and a bud.
+                </h2>
+                <div class="statement-divider"></div>
+                <p class="brand-submotto">
+                    Organic Whole Leaf Tea, sourced sustainably from world-renowned gardens and packed with uncompromised integrity.
+                </p>
+            </div>
+        </section>
+
+        <!-- BEST SELLERS CAROUSEL SECTION -->
+        <section class="best-sellers-section" id="best-sellers">
+            <div class="section-container">
+                <!-- Header with user-provided "BEST SELLERS" badge & carousel controls -->
+                <div class="best-sellers-header">
+                    <div class="best-sellers-badge-wrap">
+                        <img src="c445da2d-9f55-46d6-8c77-c4a1818d36d9.png" alt="Best Sellers" class="best-sellers-badge-img">
+                    </div>
+                    
+                    <div class="carousel-controls">
+                        <button class="carousel-arrow prev-btn" id="carouselPrev" aria-label="Previous products">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </button>
+                        <button class="carousel-arrow next-btn" id="carouselNext" aria-label="Next products">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Cards Carousel Track -->
+                <div class="products-carousel-viewport" id="productsViewport">
+                    <div class="products-track" id="productsTrack">
+                        
+                        <!-- Product 1: Organic Tropical Green Tea -->
+                        <article class="product-card" data-product-id="prod-1">
+                            <div class="product-card-visual bg-tropical">
+                                <img src="b0fdcb37-8bfc-406a-b7a4-5107d04ce81d.png" alt="Organic Tropical Green Tea Sachets" class="card-featured-img">
+                                <button class="quick-add-btn" 
+                                        data-name="Organic Tropical Green Tea" 
+                                        data-price="11.95" 
+                                        data-image="b0fdcb37-8bfc-406a-b7a4-5107d04ce81d.png"
+                                        aria-label="Add Organic Tropical Green Tea to bag">
+                                    <i class="ri-add-line"></i> Add
+                                </button>
+                            </div>
+                            <div class="product-card-details">
+                                <h3 class="product-title">Organic Tropical Green Tea</h3>
+                                <div class="product-price">From $11.95</div>
+                                <p class="product-description">Our Organic Tropical Green is a fruity and fun take on a classic green tea.</p>
+                            </div>
+                        </article>
+
+                        <!-- Product 2: Organic Ceremonial Matcha -->
+                        <article class="product-card" data-product-id="prod-2">
+                            <div class="product-card-visual bg-matcha">
+                                <img src="f50e389a-c1a8-4e0c-86d2-0bac18a0d0aa.png" alt="Organic Ceremonial Matcha - 1 oz Tin" class="card-featured-img">
+                                <button class="quick-add-btn" 
+                                        data-name="Organic Ceremonial Matcha - 1 oz Tin" 
+                                        data-price="23.95" 
+                                        data-image="f50e389a-c1a8-4e0c-86d2-0bac18a0d0aa.png"
+                                        aria-label="Add Organic Ceremonial Matcha to bag">
+                                    <i class="ri-add-line"></i> Add
+                                </button>
+                            </div>
+                            <div class="product-card-details">
+                                <h3 class="product-title">Organic Ceremonial Matcha - 1 oz Tin</h3>
+                                <div class="product-price">From $23.95</div>
+                                <p class="product-description">Our Ceremonial Matcha is organic and ceremonial-grade Japanese matcha.</p>
+                            </div>
+                        </article>
+
+                        <!-- Product 3: Organic Peppermint Naked Sachets -->
+                        <article class="product-card" data-product-id="prod-3">
+                            <div class="product-card-visual bg-peppermint">
+                                <img src="3024e33d-eb56-4873-836b-f5be6a3e349d.png" alt="Organic Peppermint - 50 Naked Tea Sachets" class="card-featured-img">
+                                <button class="quick-add-btn" 
+                                        data-name="Organic Peppermint - 50 Naked Tea Sachets" 
+                                        data-price="21.95" 
+                                        data-image="3024e33d-eb56-4873-836b-f5be6a3e349d.png"
+                                        aria-label="Add Organic Peppermint to bag">
+                                    <i class="ri-add-line"></i> Add
+                                </button>
+                            </div>
+                            <div class="product-card-details">
+                                <h3 class="product-title">Organic Peppermint - 50 Naked Tea Sachets</h3>
+                                <div class="product-price">$21.95</div>
+                                <p class="product-description">Our organic Peppermint tea is made from peppermint grown in Washington State.</p>
+                            </div>
+                        </article>
+
+                        <!-- Product 4: Organic Earl Grey Naked Sachets -->
+                        <article class="product-card" data-product-id="prod-4">
+                            <div class="product-card-visual bg-earlgrey">
+                                <img src="17728560-802f-40bc-92c5-5071e97a833e.png" alt="Organic Earl Grey - 50 Naked Tea Sachets" class="card-featured-img">
+                                <button class="quick-add-btn" 
+                                        data-name="Organic Earl Grey - 50 Naked Tea Sachets" 
+                                        data-price="21.95" 
+                                        data-image="17728560-802f-40bc-92c5-5071e97a833e.png"
+                                        aria-label="Add Organic Earl Grey to bag">
+                                    <i class="ri-add-line"></i> Add
+                                </button>
+                            </div>
+                            <div class="product-card-details">
+                                <h3 class="product-title">Organic Earl Grey - 50 Naked Tea Sachets</h3>
+                                <div class="product-price">$21.95</div>
+                                <p class="product-description">Our Organic Earl Grey features rich organic black tea infused with bergamot.</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Bottom CTA banner -->
+                <div class="shop-all-banner">
+                    <a href="#shop" class="btn btn-secondary-outline">
+                        <span>Shop All Teas</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BRAND VALUES BADGES STRIP -->
+        <section class="brand-values-strip">
+            <div class="values-container">
+                <div class="value-item">
+                    <div class="value-icon"><i class="ri-leaf-line"></i></div>
+                    <div class="value-info">
+                        <h4>100% Organic</h4>
+                        <p>USDA Certified organic ingredients</p>
+                    </div>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><i class="ri-recycle-line"></i></div>
+                    <div class="value-info">
+                        <h4>Plant-Based Sachets</h4>
+                        <p>Compostable & petroleum-free</p>
+                    </div>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><i class="ri-truck-line"></i></div>
+                    <div class="value-info">
+                        <h4>Free US Shipping</h4>
+                        <p>On all qualifying orders over $50</p>
+                    </div>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon"><i class="ri-award-line"></i></div>
+                    <div class="value-info">
+                        <h4>Whole Leaf Quality</h4>
+                        <p>No dust, fannings, or shortcuts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <img src="brandLogo.jpg" alt="Two Leaves and a Bud" class="footer-logo">
+                    <p class="footer-tagline">
+                        Real whole leaf tea in pyramid sachets and loose leaf. Sourced with honor, crafted for great taste.
+                    </p>
+                    <div class="social-links">
+                        <a href="#instagram" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#facebook" aria-label="Facebook"><i class="ri-facebook-box-line"></i></a>
+                        <a href="#twitter" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#pinterest" aria-label="Pinterest"><i class="ri-pinterest-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="#matcha">Matcha Green Tea</a></li>
+                        <li><a href="#naked-sachets">Naked Tea Sachets</a></li>
+                        <li><a href="#organic-tea">Organic Tea Blends</a></li>
+                        <li><a href="#chai">Chai Latte Mix</a></li>
+                        <li><a href="#gifts">Gifts & Samplers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#our-story">Our Story</a></li>
+                        <li><a href="#our-spirit">Our Spirit</a></li>
+                        <li><a href="#partners">Wholesale & Cafe</a></li>
+                        <li><a href="#reviews">Customer Reviews</a></li>
+                        <li><a href="#journal">Tea Journal</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col newsletter-col">
+                    <h4 class="footer-heading">Stay Steeped</h4>
+                    <p class="newsletter-desc">Sign up for exclusive offers, tea stories, and 15% off your first order.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                        <input type="email" placeholder="Enter your email" required aria-label="Email address">
+                        <button type="submit" class="newsletter-submit-btn">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Two Leaves and a Bud. All Rights Reserved.</p>
+                <div class="footer-legal-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="#terms">Terms of Service</a>
+                    <span>•</span>
+                    <a href="#accessibility">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
